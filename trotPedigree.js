@@ -8,7 +8,7 @@ async function getHtml () {
   console.log(new Date());
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  const url = 'http://www.trot-pedigree.net/js/app/gridsynthe.php?lagen=&dhxr1680023949380=1';
+  const url = 'http://www.trot-pedigree.net/js/app/gridsynthe.php?lagen=2020';
   await page.goto(url);
   const html = await page.content(); 
   await browser.close();
